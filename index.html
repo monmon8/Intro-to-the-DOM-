@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Password Checker</title>
+  </head>
+  <body>
+    <script src="passwordChecker.js"></script>
+
+    <div class="container">
+      <h1>Check the strength of your password :)</h1>
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+        oninput="checkPassword()"
+      />
+      <div id="progress">
+        <div id="progress-bar"></div>
+      </div>
+      <div id="feedback"></div>
+    </div>
+  </body>
+</html>
